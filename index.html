@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
   <link rel="stylesheet" href="./css/style.css">
   <title>Document</title>
 </head>
+
 <body>
   <!-- Splasch Screen -->
   <!-- <div class="splash-screen">
@@ -18,24 +20,42 @@
     <!-- Fixed Top Nav -->
     <nav class="top-nav">
       <div class="logo-wrapper">
-        <img class="FD-logo" src="./media/FD_Logo.png" alt="FD logo">
+        <img class="fd-logo" src="./media/FD_Logo.png" alt="FD logo">
       </div>
       <p class="navigator"><span class="navigator-prefix">p. </span>HOME</p>
       <div class="mobile-menu">
         <p class="mobile-menu-toggler">MENU</p>
-        <!-- <div class="mobile-menu-wrapper">
-          <h2>MENU</h2>
-          <p class="">Pages -</p>
-          <ul class="mobile-menu-list">
-            <li class="mobile-menu-item"><a href="#home" class="mobile-menu-link">Home</a></li>
-            <li class="mobile-menu-item"><a href="#" class="mobile-menu-link">Projects</a></li>
-            <li class="mobile-menu-item"><a href="#" class="mobile-menu-link">Articles</a></li>
-            <li class="mobile-menu-item"><a href="#" class="mobile-menu-link">Work for Future</a></li>
-          </ul> 
-        </div> -->
-        
       </div>
     </nav>
+    <div class="top-bar-for-mobile-menu">
+      <div>
+        <img class="logo-mobile-bar" src="./media/FD_Logo.png" alt="FD logo">
+      </div>
+      <div class="close-menu">
+        <div class="mobile-menu-close">CLOSE</div>
+      </div>
+    </div>
+    <div class="mobile-menu-wrapper">
+      <h2 class="mobile-menu-title">MENU</h2>
+      <p class="mobile-menu-subtitle">Pages -</p>
+      <ul class="menu-list mobile-menu-list">
+        <li class="menu-item mobile-menu-item"><a href="#home" class="menu-link mobile-menu-link">Home</a></li>
+        <li class="menu-item mobile-menu-item"><a href="#" class="menu-link mobile-menu-link">Projects</a></li>
+        <li class="menu-item mobile-menu-item"><a href="#" class="menu-link mobile-menu-link">Articles</a></li>
+        <li class="menu-item mobile-menu-item"><a href="#" class="menu-link mobile-menu-link">Work for Future</a></li>
+      </ul>
+      <div class="agreements-wrapper">
+        <ul class="menu-list agreements">
+          <li class="menu-item agreements-item"><a href="#" class="menu-link agreements-link">Privacy policy</a></li>
+          <li class="menu-item agreements-item"><a href="#" class="menu-link agreements-link">Coockie policy</a></li>
+          <li class="menu-item agreements-item"><a href="#" class="menu-link agreements-link">Terms and conditions</a></li>
+        </ul>
+        <p class="mobile-menu-subtitle">Information -</p>
+        <p class="info">&copy; 2020 Framee Developers - IVA IT15450211006
+          All Rights Reserved</p>
+      </div>
+    </div>
+
     <!-- Hero -->
     <section class="hero">
       <div class="hero-lamp"></div>
@@ -44,7 +64,7 @@
         <p class="hero-copy">We create successful startups, which
           they make innovation their own
           only reason for being.</p>
-          <a href="#" class="btn cta-btn">Join the team<img src="./media/start-button_mobile.png" alt=""></a>
+        <a href="#" class="btn cta-btn">Join the team<img src="./media/start-button_mobile.png" alt=""></a>
       </div>
       <div class="ad-container">
         <div class="ad">
@@ -56,7 +76,9 @@
     </section>
   </div>
 
-  
+
   <script src="./scripts/splash.js"></script>
+  <script src="./scripts/index.js"></script>
 </body>
+
 </html>

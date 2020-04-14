@@ -1,0 +1,180 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+/* General classes */
+.primary {
+  color: #F7561D;
+}
+
+.btn {
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  color: #fff;
+  background: #F7561D;
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  padding: 15px 22px;
+  border-radius: 10px;
+}
+
+
+/* Splash Screen */
+.splash-screen {
+  width: 100vw;
+  height: 100vh;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  transition: opacity 2s;
+}
+
+.splash-logo {
+  display: block;
+}
+
+.main {
+  /* !!!! DON'T FORGET TO CHANGE OPACITY TO 0 AND TO UNDO THE QUOTING !!!! */
+  opacity: 1;
+  transition: opacity 2.5s 1.5s;
+}
+
+
+/* Top Nav Bar */
+.top-nav {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 90px;
+  border-bottom: 1px solid #E9E9E9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-wrapper {
+  width: 111px;
+  height: 100%;
+  border-right: 1px solid #E9E9E9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigator {
+  color: #505050;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: -0.03em;
+}
+
+.navigator-prefix {
+  color: #9B9B9B;
+}
+
+.mobile-menu {
+  border-left: 1px solid #E9E9E9;
+  padding: 50px 41px 23px 31px;
+  cursor: pointer;
+}
+
+.mobile-menu-toggler {  
+  color: #BFBFBF;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: -0.015em;
+  margin: 0;
+  position: relative;
+}
+
+.mobile-menu-toggler::after {
+  content: '•';
+  display: block;
+  position: absolute;
+  top: -17px;
+  left: 10px;
+  color: #606060;
+  font-weight: 700;
+  font-size: 46px;  
+  letter-spacing: 0.155em;
+}
+
+
+/* Hero */
+.hero {
+  height: 100vh;
+  padding-top: 90px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.hero-wrapper {
+  text-align: center;
+  margin-top: 5.22vh;
+}
+
+.hero-lamp {
+  display: block;
+  margin: 0 auto;
+  width: 92px;
+  height: 134px;
+  background: url('../media/lamp_mobile.png') center center;
+}
+
+.hero-title {
+  width: 253px;
+  margin: 0 auto 2.09vh;
+  font-size: 38px;
+  line-height: 101.5%;
+  letter-spacing: 0.015em;
+}
+
+.hero-copy {
+  color: #ACACAC;
+  width: 273px;
+  margin: 0 auto 7.015vh;
+  font-size: 16px;
+  line-height: 131.5%;
+  letter-spacing: 0.015em;
+}
+
+.cta-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 7.5px 20px;
+}
+
+.cta-btn img {
+  /* display: block; */
+  margin-left: 22px;
+}
+
+.ad-container {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.ad {
+  width: 216px;
+  height: 93px;
+  background: #eee;
+  margin: 0 auto 4.6vh;  
+}

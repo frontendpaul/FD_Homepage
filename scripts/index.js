@@ -6,6 +6,8 @@ const main = document.querySelector('body');
 
 const navigatrorPrefix  = document.querySelector('.navigator-prefix');
 
+
+
 toggler.addEventListener('click', function() {  
   mobileMenu.style.top = '0';
   bar.style.display = 'flex';

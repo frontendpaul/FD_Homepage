@@ -487,10 +487,6 @@ body {
     margin: 0 auto 0 18.5px;
   }
 
-  .bot-agreements .manu-item {
-    /* height: 100%; */
-  }
-
   .bot-agreements .menu-link {    
     color: #A5A5A5;
   }
@@ -510,18 +506,25 @@ body {
     left: 59px;
   }
 
-  .bg {
+  .bg-wrapper {
+    width: 400px;
+    height: 100vh;
     position: absolute;
     z-index: -3;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+  }
+
+  .bg {
+    position: relative;
+    left: 100px;
+    top: -100px;
     width: 1300px;
     height: 1327px;
-    left: 459px;
-    top: -87px;
     background: linear-gradient(147.73deg, #FF7A00 1.1%, #EF3636 46.74%);
     box-shadow: 0px 4px 56px rgba(0, 0, 0, 0.25);
     border-radius: 50%;
-    /* background: url('../media/Cover-Element.png'); */
-    /* overflow: hidden; */
   }
 
   .bg::before {
@@ -630,6 +633,19 @@ body {
 
 @media (min-width: 992px) { 
 
+  
+  .bg-wrapper {
+    width: 500px;
+  }
+
+  .bg {
+    position: relative;
+    left: 100px;
+    /* top: 100px; */
+    width: 1600px;
+    height: 1627px;
+  }
+
 }
 
 @media (min-width: 1200px) {
@@ -705,6 +721,28 @@ body {
   /* Hero */
   .hero-lamp {
     left: 105px;
+  }
+  
+  .bg-wrapper {
+    width: 500px;
+    right: 127px;
+  }
+
+  .bg {
+    position: relative;
+    left: 100px;
+    top: -150px;
+    width: 1600px;
+    height: 1627px;
+  }
+
+  .bg::before {
+    top: 400px;
+    left: -100px;
+  }
+
+  .bg::after {
+    top: 800px;
   }
 
   .check {

@@ -28,6 +28,29 @@ body {
   border-radius: 10px;
 }
 
+.main {
+  /* !!!! DON'T FORGET TO CHANGE OPACITY TO 0 AND TO UNDO THE QUOTING !!!! */
+  opacity: 1;
+  transition: opacity 2.5s 1.5s;
+  overflow: hidden;
+}
+
+.menu-list {  
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+}
+
+.menu-link {
+  text-decoration: none;
+}
+
+
 
 /* Splash Screen */
 .splash-screen {
@@ -47,27 +70,6 @@ body {
 
 .splash-logo {
   display: block;
-}
-
-.main {
-  /* !!!! DON'T FORGET TO CHANGE OPACITY TO 0 AND TO UNDO THE QUOTING !!!! */
-  opacity: 1;
-  transition: opacity 2.5s 1.5s;
-}
-
-.menu-list {  
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.menu-item {
-  display: flex;
-  align-items: center;
-}
-
-.menu-link {
-  text-decoration: none;
 }
 
 
@@ -114,7 +116,13 @@ body {
 /* Mobile Menu */
 .box-right {
   border-left: 1px solid #E9E9E9;
-  padding: 50px 41px 24px 31px;
+  /* padding: 50px 41px 24px 31px; */
+  padding-top: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 104px;
+  height: 100%;
   cursor: pointer;
 }
 
@@ -205,7 +213,7 @@ body {
   padding: 90px 37px 0;
   background: #13324A;
   color: #1E68A0;
-  transition: top 0.5s;
+  transition: top 0.5s cubic-bezier(0.33, 1, 0.68, 1);
 }
 
 .mobile-menu-title {
@@ -555,7 +563,7 @@ body {
     height: 542px;
     background: url('../media/check.png') no-repeat;
     position: absolute;
-    z-index: -1;
+    z-index: -4;
     top: 30vh;
     left: 0;
   }
@@ -653,7 +661,7 @@ body {
   .box-right {
     cursor: initial;
     height: 89px;
-    width: 128px;
+    min-width: 128px;
   }
 
   .mobile-menu-toggler {
@@ -664,9 +672,38 @@ body {
     display: none;
   }
 
+
   /* Menu */
+  .logo-wrapper {
+    width: 156px;
+    border: 0;
+  }
+
+  .navigator {
+    display: none;
+  }
+
   .menu {
     display: block;
+    margin-right: auto;
+  }
+
+  .menu-item {
+    display: inline-block;
+    margin-right: 27px;
+  }
+
+  .menu-link {
+    font-weight: bold;
+    font-size: 17px;
+    letter-spacing: 0.155em;
+    text-transform: uppercase;
+    color: #707070;
+  }
+
+  .menu-counter {
+    margin-right: 8px;
+    color: #B2B2B2;
   }
 
   /* Bottom Bar */
@@ -695,6 +732,7 @@ body {
     width: 76px;
     height: 89px;
     margin-bottom: 30px;
+    margin-top: 80px;
   }
 
   .side-copyright {
@@ -708,7 +746,7 @@ body {
     color: #D0D0D0;
     display: flex;
     flex-direction: column;
-    margin-bottom: 80px;
+    /* margin-bottom: 80px; */
   }
 
   .light {

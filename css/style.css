@@ -69,6 +69,7 @@ body {
   color: #A2A2A2;
   margin: 0;
   margin-bottom: 5px;
+  text-transform: uppercase;
 }
 
 
@@ -421,19 +422,35 @@ body {
   /* margin-left: 33vw; */
 }
 
+.cards-wrapper {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
 
 .card {
   width: 87vw;
   height: 271px;
   background: #FFFFFF;
   box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.15);
-  border-radius: 10px;
   margin: 0 auto 3vh;
+  border-radius: 10px;
   position: relative;
+  z-index: 3;
+  margin-top: -220px;
+}
+
+.card2 {
+  margin-top: -220px;
+  z-index: 2;
+}
+
+.card3 {
+  z-index: 1;
 }
 
 .card-logo {
-  width: 150px;
+  width: 40%;
   height: 77px;
   position: absolute;
   display: flex;
@@ -441,15 +458,59 @@ body {
   align-items: center;
 }
 
+.card-logo img {
+  display: block;
+  height: 70%;
+}
+
 .card-top-bar {
   height: 77px;
   border-bottom: 1px solid #E9E9E9;
+  display: flex;
+  align-items: center;
 }
 
 .card-title-wrapper {
-  display: flex;
-  flex-direction: column;
-  margin-left: auto;
+  margin-left: 45%;
+}
+
+.card-subtitle {
+  margin: 0;
+}
+
+.card-title {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.card-hero-title {
+  font-size: 29px;
+  text-align: center;
+  letter-spacing: -0.01em;
+  background: rgb(255,179,0);
+  background: linear-gradient(120deg, #FFB300, #E0CD23);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 0 10px;
+}
+
+.card-copy {
+  font-size: 15px;
+  line-height: 124.69%;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #A6A6A6;
+  padding: 0 10px;
+}
+
+.card-bg-bar {
+  position: absolute;
+  bottom: 10px;
+  left: 32%;
+  width: 117px;
+  height: 7px;
+  background: #F5F5F5;
+  border-radius: 35px;
 }
 
 

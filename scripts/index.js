@@ -11,6 +11,8 @@ const main = document.body;
 
 const navigatrorPrefix  = document.querySelector('.navigator-prefix');
 const navigatrorPageTexts  = document.querySelectorAll('.what-page');
+const scrollCounters  = document.querySelectorAll('.scroll-counter-x');
+
 
 
 
@@ -99,6 +101,9 @@ const onProjects = () => {
       if (entry.intersectionRatio > 0) {
         for (const text of navigatrorPageTexts) {
           text.innerHTML = target.id;
+          for (const counter of scrollCounters) {
+            counter.innerHTML = '2';
+          }
         }
       }
     });
@@ -122,6 +127,9 @@ const onHome = () => {
     entries.forEach(entry => {
       for (const text of navigatrorPageTexts) {
         text.innerHTML = target.id;
+        for (const counter of scrollCounters) {
+          counter.innerHTML = '1';
+        }
       }
     });
   };

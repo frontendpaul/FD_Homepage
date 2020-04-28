@@ -54,6 +54,14 @@ body {
   text-decoration: none;
 }
 
+a:hover {
+  color: #EF3636;
+}
+
+.active-link {
+  color: #EF3636;
+}
+
 .title {
   font-weight: bold;
   font-size: 27px;
@@ -572,7 +580,8 @@ body {
 }
 
 .new-subtitle,
-.new-big {
+.new-big,
+.click-here {
   display: none;
 }
 
@@ -707,7 +716,8 @@ textarea::placeholder {
 }
 
 .form-terms {
-  width: 90%;
+  width: 100%;
+  margin-left: -10px;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.015em;
@@ -1190,6 +1200,49 @@ textarea::placeholder {
     margin-bottom: 100px;
   }
 
+
+
+  /* New Project Subpage */
+  .projects.form {
+    padding-bottom: 120px;
+  }
+
+  .form .projects-bg-wrapper {
+    width: 500px;
+    height: 450px;
+    top: 0;
+    overflow: hidden;
+  }
+
+  .form .projects-bg {
+    width: 150vw;
+    height: 150vw;
+    background: #EF3636;
+    background: linear-gradient(147.73deg, #FF7A00 1.1%, #EF3636 46.74%);
+    box-shadow: 0px 4px 56px rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+    bottom: 50px;
+    left: 50px;
+    z-index: -1;
+  }
+
+  .form .projects-bg::after {
+    position: absolute;
+    top: initial;
+    bottom: 100px;
+    right: initial;
+    left: 320px;
+  }
+
+  .new-form {
+    width: 484px;
+    height: 100%;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 20px 38px;
+  }
+
 }
 
 @media (min-width: 992px) { 
@@ -1259,6 +1312,7 @@ textarea::placeholder {
   }
 
   .click-here {
+    display: block;
     font-weight: 500;
     font-size: 22px;
     line-height: 26px;
@@ -1278,6 +1332,22 @@ textarea::placeholder {
 
   .projects .scroll-wrapper {
     margin-bottom: 50px;
+  }
+
+  
+  /* New Project Subpage */
+  .form .projects-bg-wrapper {
+    width: 700px;
+    height: 500px;
+  }
+
+  .form .projects-bg::after {
+    left: 450px;
+    bottom: 150px;
+  }
+
+  .new-form {
+    margin: 50px auto 0;
   }
 
 }
@@ -1325,6 +1395,10 @@ textarea::placeholder {
     letter-spacing: 0.155em;
     text-transform: uppercase;
     color: #707070;
+  }
+  
+  .active-link {
+    color: #EF3636;
   }
 
   .menu-counter {
@@ -1436,7 +1510,31 @@ textarea::placeholder {
   }
 
   .projects-bg-wrapper {
-    right: 157px;
+    right: 127px;
+  }
+
+
+  /* New Project Subpage */
+  .form .projects-bg::after {
+    bottom: 200px;
+    left: 500px;
+  }
+
+  .new-form {
+    width: 728px;
+  }
+
+  .submit-btn {
+    margin: initial;
+  }
+
+  .form-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .form-wrapper .form-group {
+    width: 47.5%;
   }
 
 }

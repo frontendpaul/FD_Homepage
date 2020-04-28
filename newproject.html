@@ -3,9 +3,158 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
   <title>New Project</title>
 </head>
 <body>
-  <h1>New Project</h1>
+  <nav class="top-nav">
+    <div class="logo-wrapper">
+      <img class="fd-logo" src="./media/FD_Logo.png" alt="FD logo">
+    </div>
+    <p class="navigator"><span class="navigator-prefix">p. </span> <span class="what-page">HOME</span></p>
+
+    <!-- Big Screen Menu -->
+    <nav class="menu">
+      <ul class="menu-list">
+        <li class="menu-item"><a href="#projects" class="menu-link active-link"><span class="menu-counter">01</span>Projects</a>
+        </li>
+        <li class="menu-item"><a href="#" class="menu-link"><span class="menu-counter">02</span>Articles</a></li>
+        <li class="menu-item"><a href="#" class="menu-link"><span class="menu-counter">03</span>Work for future</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="box-right">
+      <p class="mobile-menu-toggler">MENU</p>
+    </div>
+  </nav>
+
+
+  <!-- Mobile Menu -->
+  <nav class="mobile-menu">
+    <div class="top-bar-for-mobile-menu">
+      <div>
+        <img class="logo-mobile-bar" src="./media/FD_Logo.png" alt="FD logo">
+      </div>
+      <div class="close-menu">
+        <div class="mobile-menu-close">CLOSE</div>
+      </div>
+    </div>
+    <div class="mobile-menu-container">
+      <div class="mobile-menu-lamp"></div>
+      <div>
+        <h2 class="mobile-menu-title">MENU</h2>
+        <p class="mobile-menu-subtitle">Pages -</p>
+      </div>
+      <ul class="menu-list mobile-menu-list">
+        <li class="menu-item mobile-menu-item"><a href="#home" class="menu-link mobile-menu-link">Home</a></li>
+        <li class="menu-item mobile-menu-item"><a href="#projects" class="menu-link mobile-menu-link">Projects</a>
+        </li>
+        <li class="menu-item mobile-menu-item"><a href="#" class="menu-link mobile-menu-link">Articles</a></li>
+        <li class="menu-item mobile-menu-item"><a href="#" class="menu-link mobile-menu-link">Work for Future</a></li>
+      </ul>
+      <div class="mobile-menu-subbar"></div>
+      <ul class="menu-list agreements">
+        <li class="menu-item agreements-item"><a href="#" class="menu-link agreements-link">Privacy policy</a></li>
+        <li class="menu-item agreements-item"><a href="#" class="menu-link agreements-link">Coockie policy</a></li>
+        <li class="menu-item agreements-item"><a href="#" class="menu-link agreements-link">Terms and conditions</a>
+        </li>
+      </ul>
+      <div>
+        <p class="mobile-menu-subtitle">Information -</p>
+        <p class="copyright">&copy; 2020 Framee Developers - IVA IT15450211006
+          All Rights Reserved</p>
+      </div>
+
+    </div>
+  </nav>
+
+
+  <!-- Bottom Bar -->
+  <div class="bot-bar">
+    <div class="bot-navigator">
+      <p class="what-page">HOME</p>
+    </div>
+    <nav class="bot-agreements">
+      <ul class="menu-list">
+        <li class="menu-item"><a href="#" class="menu-link">Privacy/Coockie policy</a></li>
+        <li class="menu-item"><a href="#" class="menu-link">Terms and conditions</a></li>
+      </ul>
+    </nav>
+    <nav class="socials">
+      <ul class="menu-list">
+        <li class="menu-item"><a class="menu-link" href="#" class="social"><img src="./media/facebook.png"
+              alt="Facebook logo"></a></li>
+        <li class="menu-item"><a class="menu-link" href="#" class="social"><img src="./media/linkedin.png"
+              alt="LinkedIn logo"></a></li>
+        <li class="menu-item"><a class="menu-link" href="#" class="social"><img src="./media/twitter.png"
+              alt="Twitter logo"></a></li>
+        <li class="menu-item"><a class="menu-link" href="#" class="social"><img src="./media/instagram.png"
+              alt="Instagram logo"></a></li>
+      </ul>
+    </nav>
+  </div>
+
+
+  <!-- Side Bar -->
+  <aside class="side-bar">
+    <img class="side-logo" src="./media/FD-Logo-2.png" alt="">
+    <p class="side-copyright">&copy; 2020 Framee Developers<span class="light">All Rights Reserved</span></p>
+  </aside>
+
+
+  <!-- New project -->
+  <section class="projects form" id="projects">
+    <div class="projects-bg-wrapper">
+      <div class="projects-bg"></div>
+    </div>
+    <div class="lamp projects-lamp"></div>
+    <div class="title-wrapper">
+      <h3 class="subtitle">Showcase</h3>
+      <h2 class="title">Projects</h2>
+    </div>
+
+    <form class="new-form">
+      <div class="title-wrapper">
+        <h3 class="subtitle">Begin to create your future</h3>
+        <h2 class="title">NEW PROJECT</h2>
+      </div>
+      <div class="row">
+        <div class="form-group name">
+          <label for="name" class="label">Name and Surname or Business</label>
+          <input type="text" name="name" id="name" placeholder="Michelle Carts">
+        </div>
+        <div class="form-group numberOfPpl">
+          <label for="numberOfPpl" class="label">Teamwork People</label>
+          <input type="number" name="numberOfPpl" id="name" placeholder="5" min="0" max="99999">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="desc" class="label">Describe your idea or your actual project</label>
+        <textarea name="desc" id="desc" cols="30" rows="10" maxlength="20000" placeholder="Mission, Vision, name and position of workgroup members and other useful information. Don’t worry you have 20000 characters for write."></textarea>
+      </div>
+      <div class="form-group">
+        <label for="email" class="label">Your Email</label>
+        <input type="email" name="email" id="email" placeholder="michellemep@mep.co.uk">
+      </div>
+      <div class="form-group">
+        <label for="phone" class="label">Your mobile phone number</label>
+        <input type="number" name="phone" id="phone" placeholder="+447988765432">
+      </div>
+      <div class="form-group">
+        <button class="btn submit-btn" type="submit">SEND</button>
+      </div>
+      <div class="form-group terms-group">
+        <input type="checkbox" name="terms" id="terms" class="checkbox" required>
+        <label for="terms"></label>
+        <p class="form-terms">I confirm that I have read the <a href="#">privacy policy</a> provided for sending my sensitive data 
+          through this form.</label>
+      </div>
+    </form>
+
+  </section>
+
+  <script src="scripts/index.js"></script>
 </body>
 </html>

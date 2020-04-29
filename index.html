@@ -11,9 +11,9 @@
 
 <body>
   <!-- Splasch Screen -->
-  <!-- <div class="splash-screen">
+  <div class="splash-screen">
     <img class="splash-logo" src="./media/FD_Logo.png" alt="">
-  </div> -->
+  </div>
 
 
   <!-- Main content -->
@@ -21,7 +21,7 @@
     <!-- Fixed Top Nav -->
     <nav class="top-nav">
       <div class="logo-wrapper">
-        <img class="fd-logo" src="./media/FD_Logo.png" alt="FD logo">
+        <a href="#home"><img class="fd-logo" src="./media/FD_Logo.png" alt="FD logo"></a>
       </div>
       <p class="navigator"><span class="navigator-prefix">p. </span> <span class="what-page">HOME</span></p>
 
@@ -31,7 +31,7 @@
           <li class="menu-item"><a href="#projects" class="menu-link"><span class="menu-counter">01</span>Projects</a>
           </li>
           <li class="menu-item"><a href="#" class="menu-link"><span class="menu-counter">02</span>Articles</a></li>
-          <li class="menu-item"><a href="#" class="menu-link"><span class="menu-counter">03</span>Work for future</a>
+          <li class="menu-item"><a href="#future" class="menu-link"><span class="menu-counter">03</span>Work for future</a>
           </li>
         </ul>
       </nav>
@@ -63,7 +63,7 @@
           <li class="menu-item mobile-menu-item"><a href="#projects" class="menu-link mobile-menu-link">Projects</a>
           </li>
           <li class="menu-item mobile-menu-item"><a href="#" class="menu-link mobile-menu-link">Articles</a></li>
-          <li class="menu-item mobile-menu-item"><a href="#" class="menu-link mobile-menu-link">Work for Future</a></li>
+          <li class="menu-item mobile-menu-item"><a href="#future" class="menu-link mobile-menu-link">Work for Future</a></li>
         </ul>
         <div class="mobile-menu-subbar"></div>
         <ul class="menu-list agreements">
@@ -227,11 +227,40 @@
       </div>
     </section>
 
+    <section class="future" id="future">
+      <div class="lamp future-lamp"></div>
+      <div class="container">
+        <h2 class="title article-title">Let's start the economy again <span class="title-span">Together!</span></h2>
+        <p class="article-hero-copy">Coronavirus has slowed us down <span class="article-hero-copy-span">but <span class="accent-text">don't</span> stop</span> </p>
+        
+        <article>
+          <img src="./media/corona.jpg" alt="">
+          <h3 class="article-title">The role of technology in this Coronavirus</h3>
+          <p>Technology has allowed science to make great strides in relatively short times, and along with it technological progress has moved, which together with: respirators, tampon machines and computers, has made it possible to mitigate the curve of contagions and help those sick to heal.</p>
+          <p>Who allowed all this are: doctors, nurses, engineers, technicians, computer scientists, systems engineers and many others, all have done their part and we can say that they have won a great battle, and that we have finally done it together.</p>
+        </article>
+
+        <article>
+          <img src="./media/videocall.jpg" alt="">
+          <h3 class="article-title">Happiness in seeing the
+            nearness</h3>
+          <p>Another fundamental aspect that has not been well explained or that perhaps has not been given much weight is the ability that the Internet has had in bringing people closer and making them feel less alone, video calls but also the online publishing itself, newspapers , online courses, learning systems for distance schools, remote press conferences, teleworking or smartworking, all of these are just some of the advantages that internet and technology have brought to humanity and the environment, less cars on the road, it means: less pollution, less stress, less traffic and much more.</p>
+        </article>
+      </div>
+    </section>
+
   </div>
 
 
   <script src="./scripts/splash.js"></script>
   <script src="./scripts/index.js"></script>
+  <script src="./scripts/smooth-scroll.polyfills.min.js"></script>
+
+  <script>
+    let scroll = new SmoothScroll('a[href*="#"]', {
+      speed: 200
+    });
+  </script>
 </body>
 
 </html>

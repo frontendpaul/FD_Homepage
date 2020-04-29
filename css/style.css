@@ -33,8 +33,7 @@ body {
 }
 
 .main {
-  /* !!!! DON'T FORGET TO CHANGE OPACITY TO 0 AND TO UNDO THE QUOTING !!!! */
-  opacity: 1;
+  opacity: 0;
   transition: opacity 2.5s 1.5s;
   overflow: hidden;
 }
@@ -91,7 +90,7 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 10;
@@ -413,6 +412,7 @@ a:hover {
   justify-content: space-between;
   align-items: center;
   position: relative;
+  overflow: hidden;
 }
 
 .projects a {
@@ -586,6 +586,20 @@ a:hover {
 }
 
 
+/* Future */
+.future {
+  height: 100vh;
+  padding-top: 90px;
+}
+
+.future-lamp {
+  width: 165px;
+  height: 201px;
+  background: url('../media/heart-mobile.png');
+}
+
+
+
 /* New Project Subpage */
 .projects.form {
   justify-content: flex-start;
@@ -612,8 +626,9 @@ a:hover {
 }
 
 .new-form  {
+  width: 100vw;
   margin-top: 50px;
-  padding: 0 38px;
+  padding: 0 12px;
 }
 
 .new-form .title-wrapper {

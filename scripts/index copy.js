@@ -5,6 +5,7 @@ const closeBtn = document.querySelector('.mobile-menu-close');
 const links = document.querySelectorAll('.menu-link');
 
 const cards = document.querySelectorAll('.card');
+const cardLinks = document.querySelector('.card-href');
 
 const main = document.body;
 
@@ -43,26 +44,59 @@ for(const link of links) {
   });
 }
 
+const projectLinks = {
+  card1: 'https://makerdelivery.com',
+  card2: 'https://LEONARDSYSTEM.COM',
+  card3: 'https://PRICEGOD.IT'
+};
 
 for (const card of cards) {
   card.addEventListener('click', e => {
     for (const card of cards) {
+      // if (card.classList.contains('active')) {
+      //   // Wrap card in href
+      //     const cardContainer = document.querySelector('.card-container');
+      //     const getHTML = cardContainer.innerHTML;
+      //     const projektLink = projectLinks[card.id];
+      //     const newHTML = `<a href="${projektLink}">` + getHTML + '</a>';
+      //     cardContainer.innerHTML = newHTML;
+      // }
+
       card.classList.remove('active');
     }
     card.classList.add('active');
+    
+    // Wrap card in href
+    // addLink(card);
   });
 }
 
+const addLink = function(card) {
+  const cardContainer = document.querySelector('.card-container');
+  const getHTML = cardContainer.innerHTML;
+  const projektLink = projectLinks[card.id];
+  const newHTML = `<a href="${projektLink}">` + getHTML + '</a>';
+  cardContainer.innerHTML = newHTML;
+}
+
+
+
+// cardLinks.addEventListener('click', e => {
+//   if (this.parentElement.classList.contains('is-disabled')) {
+//     e.preventDefault();
+//   }
+// });
+
 const onProjects = () => {
-  const options = {
+  let options = {
     root: null,
     rootMargin: '0px',
     threshold: 1.0
   }
   
-  const target = document.querySelector('#projects');
+  let target = document.querySelector('#projects');
   
-  const callback = (entries) => {
+  let callback = (entries) => {
     entries.forEach(entry => {
       if (entry.intersectionRatio > 0) {
         for (const text of navigatrorPageTexts) {
@@ -75,21 +109,21 @@ const onProjects = () => {
     });
   };
   
-  const observer = new IntersectionObserver(callback, options);
+  let observer = new IntersectionObserver(callback, options);
   
   observer.observe(target);
 }
 
 const onHome = () => {
-  const options = {
+  let options = {
     root: null,
     rootMargin: '0px',
     threshold: 1.0
   }
   
-  const target = document.querySelector('#home');
+  let target = document.querySelector('#home');
   
-  const callback = (entries) => {
+  let callback = (entries) => {
     entries.forEach(entry => {
       for (const text of navigatrorPageTexts) {
         text.innerHTML = target.id;
@@ -100,7 +134,7 @@ const onHome = () => {
     });
   };
   
-  const observer = new IntersectionObserver(callback, options);
+  let observer = new IntersectionObserver(callback, options);
   
   observer.observe(target);
 }

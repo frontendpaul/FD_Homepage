@@ -2,14 +2,8 @@
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
-html,
 body {
   margin: 0;
-  padding: 0;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -588,14 +582,266 @@ a:hover {
 
 /* Future */
 .future {
-  height: 100vh;
-  padding-top: 90px;
+  padding: 90px 35px 60px
 }
 
 .future-lamp {
   width: 165px;
   height: 201px;
   background: url('../media/heart-mobile.png');
+}
+
+.article-title {
+  font-weight: 500;
+  font-size: 1.3rem;
+  letter-spacing: -0.035em;
+  margin: 44px 0 34px 75px;
+}
+
+.future > .container > .article-title {
+  font-weight: bold;
+  font-size: 0.8rem;
+  text-align: center;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  margin: initial;
+}
+
+.title-span {
+  font-family: 'Lobster', cursive;
+  font-size: 3.2rem;
+  letter-spacing: 0.07em;
+  text-transform: none;
+  color: #AFF385;
+}
+
+.article-hero-copy {
+  font-weight: bold;
+  font-size: 0.8rem;
+  text-align: center;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+.article-hero-copy-span {
+  display: block;
+  font-size: 1.3rem;
+}
+
+.accent-text {
+  color: #AFF385;  
+}
+
+.article-section {
+  margin-top: 55px;
+}
+
+.article-section-img {
+  width: 100vw;
+  margin: 0 -35px;
+}
+
+.article-title-wrapper {
+  position: relative;
+}
+
+.article-title-img {
+  position: absolute;
+  top: -48px;
+}
+
+.article-copy {
+  font-size: 1.15rem;
+  line-height: 146.19%;
+  text-align: justify;
+  letter-spacing: -0.055em;
+  color: #6C6C6C;
+  margin-bottom: 2em;
+}
+
+
+.stay-positive {
+  width: 100vw;
+  min-height: 362px;
+  padding: 0 35px;
+  margin: 0 -35px;
+  background: #008DFF;
+  position: relative;
+  overflow: hidden;
+}
+
+.positive-bg {
+  width: 256px;
+  height: 256px;
+  background: url('../media/rocketman.png') center center;
+  position: absolute;
+  bottom: 10px;
+  right: -40px;
+  opacity: 0.12;
+}
+
+.positive-copy {
+  font-weight: 500;
+  font-size: 1.1rem;
+  line-height: 153.69%;
+  text-align: center;
+  letter-spacing: 0.005em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-top: 50px;
+  position: relative;
+  z-index: 2;
+}
+
+.positive-title {
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #52B2FF;
+  position: relative;
+  z-index: 2;
+}
+
+.positive-title .title-span {
+  font-size: 2.5rem;
+  display: block;
+  color: #fff;
+  position: relative;
+  z-index: 2;
+}
+
+.article-cta {
+  position: relative;
+}
+
+.article-cta a {
+  text-decoration: none;
+}
+
+.article-cta-bg {
+  width: 64px;
+  height: 97px;
+  position: absolute;
+  z-index: -1;
+  top: -60px;
+  right: -20px;
+  background: url('../media/clock.png') center center no-repeat;
+}
+
+.article-cta-bg::before,
+.article-cta-bg::after {
+  content: '';
+  display: block;
+  position: absolute;
+}
+
+.article-cta-bg::before {
+  width: 45px;
+  height: 46px;
+  top: 110px;
+  right: 0;
+  background: url('../media/Polygon-3.png');
+}
+
+.article-cta-bg::after {
+  width: 59px;
+  height: 58px;
+  top: 150px;
+  right: 90px;
+  background: url('../media/Polygon-4.png');
+}
+
+.article-cta-copy {
+  width: 256px;
+  font-weight: 300;
+  font-size: 1.2rem;
+  line-height: 144.69%;
+  letter-spacing: 0.05em;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.cta-span {
+  display: block;
+  font-weight: normal;
+  font-size: 1.4rem;
+}
+
+.cta-card {
+  width: 300px;
+  height: 163px;
+  background: #008DFF;
+  box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.27);
+  border-radius: 5px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding: 0 30px 12px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.cta-card.secondary {
+  background: #fff;
+}
+
+.cta-card-bg {
+  position: absolute;
+  top: 0;
+  left: 20px;
+  width: 100px;
+  height: 100px;
+  background: url('../media/lamp-2.png') center center no-repeat;
+}
+
+.cta-card.secondary .cta-card-bg {
+  background: url('../media/money.png') center center no-repeat;
+}
+
+.cta-card-title {
+  margin: 0 0 0 128px;
+  width: 117px;
+  font-weight: 300;
+  font-size: 1.7rem;
+  line-height: 113.69%;
+  color: #FFFFFF;
+}
+
+.cta-card.secondary .cta-card-title {
+  margin-top: 0;
+  color: #6F6F6F;
+}
+
+.cta-card-cta {
+  font-weight: bold;
+  font-size: 0.5rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #C2E4FF;
+  margin: 12px 0 0;
+}
+
+.cta-card.secondary .cta-card-cta {
+  color: #A4A4A4;
+}
+
+/* Padding fix for extra small screens */
+@media (max-width: 360px) {
+  .future {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .article-section-img,
+  .stay-positive {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
 }
 
 

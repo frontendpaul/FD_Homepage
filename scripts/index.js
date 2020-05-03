@@ -53,11 +53,36 @@ for (const card of cards) {
   });
 }
 
+const onFuture = () => {
+  const options = {
+    root: null,
+    rootMargin: '0px'
+  }
+  
+  const target = document.querySelector('#future');
+  
+  const callback = (entries) => {
+    entries.forEach(entry => {
+      if(entry.intersectionRatio > 0) {
+        for (const text of navigatrorPageTexts) {
+          text.innerHTML = target.id;
+          for (const counter of scrollCounters) {
+            counter.innerHTML = '1';
+          }
+        }
+      }   
+    });
+  };
+  
+  const observer = new IntersectionObserver(callback, options);
+  
+  observer.observe(target);
+}
+
 const onProjects = () => {
   const options = {
     root: null,
-    rootMargin: '0px',
-    threshold: 1.0
+    rootMargin: '0px'
   }
   
   const target = document.querySelector('#projects');
@@ -83,20 +108,21 @@ const onProjects = () => {
 const onHome = () => {
   const options = {
     root: null,
-    rootMargin: '0px',
-    threshold: 1.0
+    rootMargin: '0px'
   }
   
   const target = document.querySelector('#home');
   
   const callback = (entries) => {
     entries.forEach(entry => {
-      for (const text of navigatrorPageTexts) {
-        text.innerHTML = target.id;
-        for (const counter of scrollCounters) {
-          counter.innerHTML = '1';
+      if (entry.intersectionRatio > 0) {
+        for (const text of navigatrorPageTexts) {
+          text.innerHTML = target.id;
+          for (const counter of scrollCounters) {
+            counter.innerHTML = '1';
+          }
         }
-      }
+      }      
     });
   };
   
@@ -105,6 +131,7 @@ const onHome = () => {
   observer.observe(target);
 }
 
+onFuture();
 onProjects();
 onHome();
 

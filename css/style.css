@@ -608,6 +608,7 @@ a:hover {
 }
 
 .title-span {
+  display: block;
   font-family: 'Lobster', cursive;
   font-size: 3.2rem;
   letter-spacing: 0.07em;
@@ -813,7 +814,7 @@ a:hover {
 }
 
 .cta-card.secondary .cta-card-title {
-  margin-top: 0;
+  /* margin-top: 0; */
   color: #6F6F6F;
 }
 
@@ -1461,6 +1462,138 @@ textarea::placeholder {
     margin-bottom: 100px;
   }
 
+
+
+  /* Future section */
+  .future {
+    padding-bottom: 90px;
+  }
+
+  .future-lamp {
+    width: 269px;
+    height: 310px;
+    position: relative;
+    top: 0;
+    left: 0;
+    background: url('../media/heart.png') center center;
+  }
+
+  .article-title {
+    line-height: initial;
+    font-size: 2.2rem;
+    margin: 1em 0;
+  }
+
+  .article-title-img {
+    display: none;
+  }
+
+  .future > .container > .article-title {
+    font-size: 1.2rem;
+  }
+
+  .title-span {
+    font-size: 5.5rem;
+  }
+
+  .article-hero-copy {
+    font-size: 1.1rem;
+  }
+
+  .article-hero-copy-span {
+    font-size: 1.9rem;
+  }
+  
+  .article-section {
+    border-top: 1px solid #D6D6D6;
+    margin-left: -35px;
+    margin-right: -35px;
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+
+  .corona {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .corona .article-section-img {
+    height: 826px;
+    margin-left: 35px;
+  }
+
+  .article-copy {
+    font-size: 1.45rem;
+  }
+
+  .videocall {
+    margin-top: 0;
+  }
+
+  .stay-positive {
+    min-height: 317px;
+  }
+
+  .positive-bg {
+    right: 30px;
+  }
+
+  .article-cta {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+  }
+
+  .article-cta-bg {
+    width: 45px;
+    height: 46px;
+    background: url('../media/Polygon-3.png');
+    top: initial;
+    right: initial;
+    bottom: 30px;
+    left: 230px;
+  }
+
+  .article-cta-bg::before,
+  .article-cta-bg::after {
+    display: none;
+  }
+
+  .article-cta-copy,
+  .cta-span {
+    font-size: 2rem;
+  }
+
+  .cta-card {
+    width: 390px;
+    height: 212px;
+    justify-content: center;
+  }
+
+  .cta-card-bg {
+    width: 131px;
+    height: 131px;
+    background: url('../media/lamp-2-big.png') center center no-repeat;
+  }
+
+  .cta-card.secondary .cta-card-bg {
+    background: url('../media/money-big.png') center center no-repeat;
+  }
+
+  .cta-card-title {
+    width: 155px;
+    font-size: 2rem;
+    font-weight: 300;
+    margin: auto 0;
+    margin-left: 180px;
+    position: relative;
+    top: 10px;
+  }
+
+  .cta-card-cta {
+    /* margin-top: auto; */
+    font-size: 0.8rem;
+  }
 
 
   /* New Project Subpage */
